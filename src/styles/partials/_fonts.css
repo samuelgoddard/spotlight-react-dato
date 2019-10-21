@@ -1,0 +1,62 @@
+/* Poppins */
+@font-face {
+	font-family: 'Poppins';
+	src: local('Poppins Regular'), local('Poppins-Regular'),
+			url('../fonts/Poppins-Regular.woff2') format('woff2'),
+			url('../fonts/Poppins-Regular.woff') format('woff');
+	font-weight: normal;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: local('Poppins Bold'), local('Poppins-Bold'),
+			url('../fonts/Poppins-Bold.woff2') format('woff2'),
+			url('../fonts/Poppins-Bold.woff') format('woff');
+	font-weight: bold;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: local('Poppins Italic'), local('Poppins-Italic'),
+			url('../fonts/Poppins-Italic.woff2') format('woff2'),
+			url('../fonts/Poppins-Italic.woff') format('woff');
+	font-weight: normal;
+	font-display: swap;
+	font-style: italic;
+}
+
+
+/* Muli */
+@font-face {
+	font-family: 'Muli';
+	src: local('Muli Regular'), local('Muli-Regular'),
+			url('../fonts/Muli-Regular.woff2') format('woff2'),
+			url('../fonts/Muli-Regular.woff') format('woff');
+	font-weight: normal;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Muli';
+	src: local('Muli Bold'), local('Muli-Bold'),
+			url('../fonts/Muli-Bold.woff2') format('woff2'),
+			url('../fonts/Muli-Bold.woff') format('woff');
+	font-weight: bold;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Muli';
+	src: local('Muli Italic'), local('Muli-Italic'),
+			url('../fonts/Muli-Italic.woff2') format('woff2'),
+			url('../fonts/Muli-Italic.woff') format('woff');
+	font-weight: normal;
+	font-display: swap;
+	font-style: italic;
+}

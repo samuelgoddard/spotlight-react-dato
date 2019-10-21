@@ -1,0 +1,19 @@
+.m-hero {
+  @apply py-16 pb-24 bg-cover bg-center;
+  
+  background-color: #04453d;
+  background-blend-mode: hard-light !important;
+
+  @screen lg {
+    @apply py-24 pb-32;
+  }
+}
+
+.m-hero__btns {
+  @apply block mb-6 p-5 rounded-xl mx-auto;
+  background-color: rgba(0,0,0,0.35);
+
+  @screen sm {
+    @apply max-w-xs;
+  }
+}

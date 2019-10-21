@@ -1,0 +1,47 @@
+body {
+  @apply font-sans antialiased font-normal;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  @apply
+    p-0
+    mb-6
+    leading-tight
+    font-bold;
+}
+
+h1 {
+	@apply text-4xl;
+}
+
+h2 {
+	@apply text-lg;
+}
+
+/* Link */
+.link {
+  @apply text-black underline transition;
+
+  &:hover, &:focus {
+    @apply text-secondary;
+  }
+
+  &.is--active {
+    @apply text-error;
+  }
+}
+
+/* Content */
+.content {
+  
+  /* Paragraph */
+  p {
+    @apply mb-6;
+  }
+
+  /* Headings following paragraphs */
+  p + h1, p + h2, p + h3, p + h4 {
+    @apply pt-6 block;
+  }
+}

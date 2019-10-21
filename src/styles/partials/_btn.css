@@ -1,0 +1,98 @@
+.btn, button {
+  @apply
+    inline-block
+    text-tertiary-dark
+    text-center
+    bg-primary
+    no-underline
+    px-5
+    py-3
+    text-lg
+    rounded-xl
+    transition;
+  
+  &:hover,
+  &:focus {
+    @apply bg-primary-light text-tertiary-dark cursor-pointer;
+  }
+}
+
+.btn--alt {
+  @apply bg-transparent border-4 border-primary text-primary;
+
+  &:hover,
+  &:focus {
+    @apply bg-transparent text-secondary border-secondary;
+  }
+}
+
+.btn--large {
+  @apply px-8 py-5;
+}
+
+.btn--small {
+  @apply px-4 py-2 text-sm;
+}
+  
+.btn--black {
+  @apply bg-black text-white;
+
+  &:hover,
+  &:focus {
+    @apply bg-grey-dark text-white;
+  }
+}
+  
+  
+.btn--grey {
+  @apply bg-grey text-black;
+
+  &:hover,
+  &:focus {
+    @apply bg-grey-dark text-white;
+  }
+}
+  
+.btn--black {
+  @apply bg-black text-white;
+
+  &:hover,
+  &:focus {
+    @apply bg-grey-dark text-white;
+  }
+}
+
+.btn--white {
+  @apply bg-white text-black;
+
+  &:hover,
+  &:focus {
+    @apply bg-white text-primary;
+  }
+}
+  
+.btn,
+button {
+  &:disabled {
+    @apply opacity-25;
+  }
+}
+
+.btn--reset {
+  @apply
+  inline-block
+  text-black
+  text-left
+  font-normal
+  bg-transparent
+  underline
+  px-0
+  py-0
+  rounded-none;
+
+  &:hover,
+  &:focus {
+    @apply bg-transparent text-secondary cursor-pointer;
+  }
+}
+  

@@ -1,0 +1,15 @@
+.container {
+  @apply 
+    mx-auto
+    px-8;
+
+  max-width: theme('screens.2xl');
+}
+
+.container--bleed {
+	@apply px-0;
+
+	@screen md {
+		@apply px-8;
+	}
+}
