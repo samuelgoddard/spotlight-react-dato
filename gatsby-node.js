@@ -1,5 +1,6 @@
+require("dotenv").config({ path: `.env` })
+
 const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
 const axios = require('axios');
 const crypto = require('crypto');
 
@@ -9,7 +10,7 @@ exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }) => 
   const { createNode } = actions;
 
   // fetch raw data from the reviewscouk api
-  const fetchRandomUser = () => axios.get(`http://api.reviews.co.uk/merchant/reviews?per_page=100&order=desc&store=adtrak-llp`);
+  const fetchRandomUser = () => axios.get(`http://api.reviews.co.uk/merchant/reviews?per_page=100&order=desc&store=${process.env.REVIEWS_STORE_ID}`);
   // await for results
   const res = await fetchRandomUser();
 
