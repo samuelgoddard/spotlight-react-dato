@@ -244,13 +244,6 @@ export const query = graphql`
         icon
       }
     }
-    reviews: allReviews {
-      edges {
-        node {
-          comments
-        }
-      }
-    }
     heroImage: file(relativePath: { eq: "hero.png" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 1200) {

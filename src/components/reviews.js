@@ -7,6 +7,7 @@ export default class TestComponent extends React.Component {
     .then(res => {
       let data = res.data
       let formattedData = data.reviews
+      
       this.setState({
         reviewsOverview: res.data,
         reviews: formattedData
