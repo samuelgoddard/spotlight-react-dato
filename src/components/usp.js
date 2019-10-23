@@ -8,7 +8,7 @@ const Usp = ({ title, icon }) => (
         {icon}
       </div>
       <div className="flex-1">
-        <p className="text-white text-lg leading-snug">{title}</p>
+        <p className="text-white text-lg leading-snug" dangerouslySetInnerHTML={{__html:title}}></p>
       </div>
     </div>
   </div>

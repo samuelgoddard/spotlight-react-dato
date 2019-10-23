@@ -1,5 +1,18 @@
 module.exports = {
   theme: {
+    customForms: theme => ({
+      default: {
+        'input, textarea, multiselect, select': {
+          borderRadius: 0,
+        },
+        'input, textarea, multiselect': {
+          backgroundColor: theme('colors.grey'),
+        },
+        select: {
+          backgroundColor: theme('colors.grey'),
+        },
+      },
+    }),
     screens: {
 			sm: '640px',
       md: '768px',
@@ -72,7 +85,8 @@ module.exports = {
       transitions: {
         'slow': 'all 0.7s ease',
       }  
-    })
+    }),
+    require('@tailwindcss/custom-forms')
   ],
   corePlugins: {
     container: false

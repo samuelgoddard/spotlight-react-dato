@@ -29,6 +29,14 @@ function SEO({ description, lang, meta, title }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
+          name: `robots`,
+          content: 'noindex'
+        },
+        {
+          name: `googlebot`,
+          content: 'noindex',
+        },
+        {
           name: `description`,
           content: metaDescription,
         },

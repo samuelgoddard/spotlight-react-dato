@@ -1,0 +1,21 @@
+.accordion__button {
+  @apply w-full text-left py-4 cursor-pointer text-black text-lg relative border-b border-grey;
+
+  &:after {
+    @apply inline-block w-2 h-2 absolute top-0 right-0 mt-5;
+    content: '';
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg);
+  }
+
+  &[aria-expanded='true'] {
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.accordion__panel {
+  @apply py-4;
+}
