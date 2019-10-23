@@ -6,10 +6,12 @@ import SEO from "../components/seo"
 import Usp from "../components/usp"
 import Hero from "../components/hero"
 import Card from "../components/card"
+import Reviews from "../components/reviews"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const LocationPage = ({ data: { location, heroImage }}) => {
+
   const process = [
     {
       icon: 'clock', 
@@ -136,6 +138,11 @@ const LocationPage = ({ data: { location, heroImage }}) => {
     </div>
 
     {/* Reviews */}
+    <div className="container">
+      <div className="flex flex-wrap">
+        <Reviews />
+      </div>
+    </div>
 
     {/* Form / Content */}
     <div className="bg-grey-light lg:mb-32">
@@ -235,6 +242,13 @@ export const query = graphql`
       usps {
         heading
         icon
+      }
+    }
+    reviews: allReviews {
+      edges {
+        node {
+          comments
+        }
       }
     }
     heroImage: file(relativePath: { eq: "hero.png" }) {
