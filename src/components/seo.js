@@ -72,7 +72,7 @@ function SEO({ description, lang, meta, title }) {
     >
       <script
         async
-        src="//217641.tctm.co/t.js"
+        src="https://217641.tctm.co/t.js"
       />
     </Helmet>
   )
