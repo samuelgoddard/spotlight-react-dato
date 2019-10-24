@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export default class TestComponent extends React.Component {
   componentWillMount() {
-    axios.get(`http://api.reviews.co.uk/merchant/reviews?per_page=10&order=desc&store=adtrak-llp`)
+    axios.get(`https://api.reviews.co.uk/merchant/reviews?per_page=10&order=desc&store=adtrak-llp`)
     .then(res => {
       let data = res.data
       let formattedData = data.reviews

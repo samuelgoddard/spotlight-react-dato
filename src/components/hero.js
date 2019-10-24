@@ -30,10 +30,9 @@ const Hero = ({ title, heroImage, phoneNumber, blurb }) => (
           </a>
         </div>
 
-        <span className="text-xl md:text-2xl text-white align-top mb-1">
-          <FontAwesomeIcon className="text-primary text-base align-middle mr-3 -mt-1" icon={faPhoneAlt} />
+        <div className="text-xl md:text-2xl text-white align-top mb-1">
           <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
-        </span>
+        </div>
       </div>
     </div>
   </BackgroundImage>
