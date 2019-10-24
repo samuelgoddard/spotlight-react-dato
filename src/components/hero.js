@@ -3,9 +3,6 @@ import PropTypes from "prop-types"
 
 import BackgroundImage from 'gatsby-background-image'
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons"
-
 const Hero = ({ title, heroImage, phoneNumber, blurb }) => (
 
   <BackgroundImage

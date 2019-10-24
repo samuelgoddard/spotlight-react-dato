@@ -118,7 +118,7 @@ const LocationPage = ({ data: { location, heroImage }}) => {
     {/* Call */}
     <div className="container mx-auto pb-12 xl:mb-16">
       <div className="w-full md:w-3/4 mx-auto text-center align-middle">
-        <p className="text-lg lg:text-xl mb-0">Open 24/7, call on {location.phoneNumber} or <a href="#" className="btn inline-block text-base ml-2">Get a <strong>Callback</strong></a>
+        <p className="text-lg lg:text-xl mb-0">Open 24/7, call on <a className="inline-block no-underline" href={`tel:${location.phoneNumber}`}>{location.phoneNumber}</a> or <a href="#" className="btn inline-block text-base ml-2">Get a <strong>Callback</strong></a>
         </p>
       </div>
     </div>
@@ -202,7 +202,7 @@ const LocationPage = ({ data: { location, heroImage }}) => {
             <p className="text-lg lg:text-xl text-primary mb-0">We offer a 24/7 service, 365 days a year</p>
           </div>
           <div className="w-full xl:w-4/12 xl:text-right">
-            <p className="text-lg mb-0 text-white">Call <span className="no-underline inline-block">{location.phoneNumber}</span> or <a href="#" className="btn inline-block text-base ml-2">Get a <strong>Callback</strong></a></p>
+            <p className="text-lg mb-0 text-white">Call <a className="no-underline inline-block" href={`tel:${location.phoneNumber}`}>{location.phoneNumber}</a> or <a href="#" className="btn inline-block text-base ml-2">Get a <strong>Callback</strong></a></p>
           </div>
         </div>
       </div>
