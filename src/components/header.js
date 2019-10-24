@@ -1,8 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
 const Header = ({ location, phoneNumber }) => (
   <header className="bg-white">
     <div className="container py-6 lg:py-10">
@@ -17,7 +15,6 @@ const Header = ({ location, phoneNumber }) => (
         </a>
         <p className="mb-0 mx-auto hidden xl:block text-lg">Reliable and hassle-free windscreen services in <strong>{location}</strong>.</p>
         <a href={`tel:${phoneNumber}`} className="mb-0 ml-auto sm:text-lg font-bold">
-          <FontAwesomeIcon className="text-primary mr-2" icon="phone-alt" />
           {phoneNumber}
         </a>
       </div>
