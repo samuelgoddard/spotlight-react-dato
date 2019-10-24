@@ -70,9 +70,6 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
-      <script
-        src="https://217641.tctm.co/t.js"
-      />
     </Helmet>
   )
 }
