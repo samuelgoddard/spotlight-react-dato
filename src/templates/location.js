@@ -241,7 +241,6 @@ export const query = graphql`
       associatedClient {
         name
         reviewsStoreId
-        color
       }
       usps {
         heading
