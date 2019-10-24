@@ -104,7 +104,7 @@ const LocationPage = ({ data: { location, heroImage }}) => {
                 <>
                   <svg className="absolute top-0 z-0 -mt-1" width="303" height="38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 18.889s55 38 150.5 0 150.5 0 150.5 0" stroke="#D1DD45" strokeWidth="3" strokeDasharray="10 10"/></svg>
       
-                  <div className="bg-primary rounded-full text-white w-12 h-12 flex flex-wrap items-center justify-center lg:mx-6 2xl:mx-16 relative z-10" style={` background-color: ${location.client.bgColor};` }>
+                  <div className="bg-primary rounded-full text-white w-12 h-12 flex flex-wrap items-center justify-center lg:mx-6 2xl:mx-16 relative z-10">
                     <FontAwesomeIcon className="text-xl far fa-angle-right mt-1" icon="angle-right" />
                   </div>
                 </>
