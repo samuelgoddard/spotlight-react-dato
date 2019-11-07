@@ -140,7 +140,7 @@ const LocationPage = ({ data: { location, heroImage }}) => {
     {/* Reviews */}
     <div className="container">
       <div className="flex flex-wrap">
-        <Reviews />
+        <Reviews storeId={`adtrak-llp`} />
       </div>
     </div>
 
