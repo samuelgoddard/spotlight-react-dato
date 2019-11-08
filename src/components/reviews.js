@@ -51,12 +51,12 @@ class Reviews extends React.Component {
 
                 <div className="flex flex-wrap mb-6 md:mb-0">
                   <div className="mr-12">
-                    <span className="text-primary-dark">Rated</span>
+                    <span className="text-base text-primary-dark">Rated</span>
                     <span className="text-2xl text-black font-display font-bold block leading-tight">{this.state.stats.average_rating}</span>
                   </div>
 
                   <div className="mr-12">
-                    <span className="text-primary-dark">Based on</span>
+                    <span className="text-base text-primary-dark">Based on</span>
                     <span className="text-2xl text-black font-display font-bold block leading-tight">{this.state.stats.total_reviews} reviews</span>
                   </div>
                 </div>
