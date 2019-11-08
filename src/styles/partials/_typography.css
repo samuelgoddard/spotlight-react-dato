@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply font-sans antialiased font-normal text-secondary-dark;
 }
