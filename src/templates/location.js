@@ -148,7 +148,7 @@ const LocationPage = ({ data: { location, heroImage }}) => {
     )}
 
     {/* Form / Content */}
-    <div className="bg-grey-light lg:mb-32" id="callback">
+    <div className="bg-grey-light" id="callback">
       <div className="container">
         <div className="flex flex-wrap py-12 lg:py-0 items-center">
           <div className="w-full lg:w-1/2 bg-white py-12 lg:py-16 lg:py-24">
