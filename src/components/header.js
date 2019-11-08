@@ -7,7 +7,7 @@ const Header = ({ location, phoneNumber }) => (
       <div className="flex flex-wrap items-center">
         <a
           href="https://adtrak.co.uk"
-          rel="noopener norefered"
+          rel="noopener noreferrer"
           target="_blank"
           aria-label="Read more about Adtrak"
           className="block w-24 sm:w-32 mr-auto text-secondary-light"

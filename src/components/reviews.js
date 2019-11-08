@@ -44,9 +44,9 @@ class Reviews extends React.Component {
             <div className="flex flex-wrap">
               <div className="w-full md:w-1/3 xl:w-1/4">
                 <div className="mb-4">
-                  {[...Array(Math.round(this.state.stats.average_rating))].map((i) => {
-                    return <FontAwesomeIcon key={i} className="text-primary text-lg xl:text-xl mr-1" icon="star" />
-                  })}
+                  {[...Array(Math.round(this.state.stats.average_rating))].map((e, i) => (
+                    <FontAwesomeIcon key={i} className="text-primary text-lg xl:text-xl mr-1" icon="star" />
+                  ))}
                 </div>
 
                 <div className="flex flex-wrap mb-6 md:mb-0">
@@ -80,15 +80,29 @@ class Reviews extends React.Component {
                       <div key={review.store_review_id} className="embla__slide">
                         <p className="text-base mb-3">{ review.comments }</p>
 
-                        {[...Array(Math.round(review.rating))].map((i) => {
-                          return <FontAwesomeIcon key={i} className="text-primary mr-1 text-sm" icon="star" />
-                        })}
+                        {[...Array(Math.round(review.rating))].map((e, i) => (
+                          <FontAwesomeIcon key={i} className="text-primary mr-1 text-sm" icon="star" />
+                        ))}
                       </div>
                     ))}
                   </div>
                 </EmblaCarouselReact>
-                <button className="absolute top-0 left-0 btn--reset" onClick={() => this.embla.scrollPrev()}><FontAwesomeIcon className="text-primary text-lg xl:text-xl mt-12" icon="angle-left" /></button>
-                <button className="absolute top-0 right-0 btn--reset" onClick={() => this.embla.scrollNext()}><FontAwesomeIcon className="text-primary text-lg xl:text-xl mt-12" icon="angle-right" /></button>
+
+                <button
+                  className="absolute top-0 left-0 mt-12 btn--reset"
+                  onClick={() => this.embla.scrollPrev()}
+                  aria-label="Scroll to previous reviews"
+                >
+                  <FontAwesomeIcon className="text-primary text-lg xl:text-xl" icon="angle-left" />
+                </button>
+
+                <button
+                  className="absolute top-0 right-0 mt-12 btn--reset"
+                  onClick={() => this.embla.scrollNext()}
+                  aria-label="Scroll to next reviews"
+                >
+                  <FontAwesomeIcon className="text-primary text-lg xl:text-xl" icon="angle-right" />
+                </button>
               </div>
             </div>
           </div>

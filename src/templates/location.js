@@ -118,7 +118,7 @@ const LocationPage = ({ data: { location, heroImage }}) => {
     {/* Call */}
     <div className="container mx-auto pb-12 xl:mb-16">
       <div className="w-full md:w-3/4 mx-auto text-center align-middle">
-        <p className="text-lg lg:text-xl mb-0">Open 24/7, call on <a className="inline-block no-underline" href={`tel:${location.phoneNumber}`}>{location.phoneNumber}</a> or <a href="#" className="btn inline-block text-base ml-2">Get a <strong>Callback</strong></a>
+        <p className="text-lg lg:text-xl mb-0">Open 24/7, call on <a className="inline-block no-underline" href={`tel:${location.phoneNumber}`}>{location.phoneNumber}</a> or <a href="#callback" className="btn inline-block text-base ml-2">Get a <strong>Callback</strong></a>
         </p>
       </div>
     </div>
@@ -139,7 +139,7 @@ const LocationPage = ({ data: { location, heroImage }}) => {
 
     {/* Reviews */}
     {location.associatedClient.reviewsStoreId && (
-      <div className="container mb-12 lg:mb-32">
+      <div className="container mb-8 md:mb-16 lg:mb-32">
         <div className="flex flex-wrap">
           <Reviews storeId={location.associatedClient.reviewsStoreId} />
         </div>
@@ -147,7 +147,7 @@ const LocationPage = ({ data: { location, heroImage }}) => {
     )}
 
     {/* Form / Content */}
-    <div className="bg-grey-light lg:mb-32">
+    <div className="bg-grey-light lg:mb-32" id="callback">
       <div className="container">
         <div className="flex flex-wrap py-12 lg:py-0 items-center">
           <div className="w-full lg:w-1/2 bg-white py-12 lg:py-16 lg:py-24">
@@ -162,18 +162,33 @@ const LocationPage = ({ data: { location, heroImage }}) => {
               <form name="contact" method="POST" data-netlify="true">
                 
                 <label className="block">
-                  <span className="text-black hidden">Name</span>
-                  <input className="form-input p-5 mb-3 block w-full" placeholder="Name" />
+                  <label htmlFor="name" className="text-black sr-only">Name</label>
+                  <input 
+                    type="text"
+                    name="name"
+                    className="form-input p-5 mb-3 block w-full"
+                    placeholder="Name"
+                  />
                 </label>
 
                 <label className="block">
-                  <span className="text-black hidden">Phone Number</span>
-                  <input className="form-input p-5 mb-3 block w-full" placeholder="Phone Number" />
+                  <label htmlFor="phone" className="text-black sr-only">Phone Number</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    className="form-input p-5 mb-3 block w-full"
+                    placeholder="Phone Number"
+                  />
                 </label>
 
                 <label className="block">
-                  <span className="text-black hidden">Email Address</span>
-                  <input className="form-input p-5 mb-5 block w-full" placeholder="Email Address" />
+                  <label htmlFor="email" className="text-black sr-only">Email Address</label>
+                  <input
+                    type="email"
+                    name="email"
+                    className="form-input p-5 mb-5 block w-full"
+                    placeholder="Email Address"
+                  />
                 </label>
                 <div className="text-center">
                   <button type="submit" className="btn text-base mx-auto">Request <strong>Callback</strong></button>
@@ -204,7 +219,7 @@ const LocationPage = ({ data: { location, heroImage }}) => {
             <p className="text-lg lg:text-xl text-primary mb-0">We offer a 24/7 service, 365 days a year</p>
           </div>
           <div className="w-full xl:w-4/12 xl:text-right">
-            <p className="text-lg mb-0 text-white">Call <a className="no-underline inline-block" href={`tel:${location.phoneNumber}`}>{location.phoneNumber}</a> or <a href="#" className="btn inline-block text-base ml-2">Get a <strong>Callback</strong></a></p>
+            <p className="text-lg mb-0 text-white">Call <a className="no-underline inline-block" href={`tel:${location.phoneNumber}`}>{location.phoneNumber}</a> or <a href="#callback" className="btn inline-block text-base ml-2">Get a <strong>Callback</strong></a></p>
           </div>
         </div>
       </div>
@@ -219,7 +234,7 @@ const LocationPage = ({ data: { location, heroImage }}) => {
           
           <a
             href="https://adtrak.co.uk"
-            rel="noopener norefered"
+            rel="noopener noreferrer"
             target="_blank"
             aria-label="Read more about Adtrak"
             className="block w-20 lg:w-24 opacity-75 md:ml-auto"

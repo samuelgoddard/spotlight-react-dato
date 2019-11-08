@@ -22,7 +22,7 @@ const Hero = ({ title, heroImage, phoneNumber, blurb }) => (
         ></p>
 
         <div className="m-hero__btns">
-          <a href="#" className="btn block w-full">
+          <a href="#callback" className="btn block w-full">
             Get a <span className="font-bold">Callback</span>
           </a>
         </div>

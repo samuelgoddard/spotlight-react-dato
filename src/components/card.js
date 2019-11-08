@@ -12,7 +12,7 @@ const Card = ({ title, blurb, btn, icon }) => (
       dangerouslySetInnerHTML={{__html:blurb}}
     ></p>
     {btn && (
-      <a href="#" className="btn mt-3 text-base">Get a <strong>callback</strong></a>
+      <a href="#callback" className="btn mt-3 text-base">Get a <strong>callback</strong></a>
     )}
   </div>
 )
