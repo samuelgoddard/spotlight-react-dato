@@ -1,5 +1,5 @@
 body {
-  @apply font-sans antialiased font-normal;
+  @apply font-sans antialiased font-normal text-secondary-dark;
 }
 
 /* Headings */

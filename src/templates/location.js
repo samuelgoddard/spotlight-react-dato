@@ -124,7 +124,7 @@ const LocationPage = ({ data: { location, heroImage }}) => {
     </div>
     
     {/* Buckets */}
-    <div className="container container--bleed mx-auto md:mb-12 lg:mb-32 overflow-x-hidden">
+    <div className="container container--bleed mx-auto mb-12 lg:mb-32 overflow-x-hidden">
       <div className="flex flex-wrap md:-mx-3 xl:-mx-6">
         {location.usps.map(({ heading, icon }, index) => (
           <div key={index} className="w-full md:w-1/2 xl:w-1/4 md:px-3 xl:px-6 md:mb-6 xl:mb-0">
@@ -138,11 +138,13 @@ const LocationPage = ({ data: { location, heroImage }}) => {
     </div>
 
     {/* Reviews */}
-    <div className="container">
-      <div className="flex flex-wrap">
-        <Reviews storeId={`adtrak-llp`} />
+    {location.associatedClient.reviewsStoreId && (
+      <div className="container mb-12 lg:mb-32">
+        <div className="flex flex-wrap">
+          <Reviews storeId={location.associatedClient.reviewsStoreId} />
+        </div>
       </div>
-    </div>
+    )}
 
     {/* Form / Content */}
     <div className="bg-grey-light lg:mb-32">

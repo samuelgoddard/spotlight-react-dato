@@ -10,6 +10,8 @@
     "@fortawesome/react-fontawesome": "^0.1.6",
     "@glidejs/glide": "^3.4.1",
     "axios": "^0.19.0",
+    "embla-carousel": "^2.5.4",
+    "embla-carousel-react": "^1.2.4",
     "gatsby": "^2.15.15",
     "gatsby-background-image": "^0.8.15",
     "gatsby-background-image-es5": "^0.8.15",
@@ -25,7 +27,9 @@
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-slick": "^0.25.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@tailwindcss/custom-forms": "^0.2.1",
