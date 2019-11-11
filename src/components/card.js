@@ -6,7 +6,7 @@ const Card = ({ title, blurb, btn, icon }) => (
     {icon && (
       <span className="block mb-5">{icon}</span>
     )}
-    <h2 className="text-lg lg:text-xl text-tertiary-dark font-display">{title}</h2>
+    <h2 className="text-lg lg:text-xl 2xl:text-2xl text-tertiary-dark font-display">{title}</h2>
     <p
       className="text-base"
       dangerouslySetInnerHTML={{__html:blurb}}

@@ -16,24 +16,24 @@ const LocationPage = ({ data: { location, heroImage }}) => {
   const process = [
     {
       icon: 'clock', 
-      title: 'Whether it’s a chip or a crack, we’ve got you covered.',
-      blurb: `Same Day Windscreen Repair & Replacement in <span className="text-primary">${location.phoneNumber}</span>`,
+      title: 'Speak to our friendly team.',
+      blurb: `Call <span className="text-primary">${location.phoneNumber}</span> or`,
       btn: true
     },
     {
       seperator: true
     },{
       icon: 'truck',
-      title: 'Repair or replacement at a time and place to suit you.',
-      blurb: 'Repair or replacement at a time and place to suit you.',
+      title: 'Respond within 60 minutes.',
+      blurb: 'Whether at home or work we will come to you and complete the necessary work.',
       btn: false
     },
     {
       seperator: true
     },{
       icon: 'coffee',
-      title: 'Insurance approved windscreen repairs and replacements.',
-      blurb: 'Insurance approved windscreen repairs and replacements.',
+      title: 'Sit back and relax.',
+      blurb: 'Our highly skilled and trained technicians will complete the job to the highest standard.',
       btn: false
     },
   ]
@@ -125,16 +125,18 @@ const LocationPage = ({ data: { location, heroImage }}) => {
     </div>
     
     {/* Buckets */}
-    <div className="container container--bleed mx-auto mb-12 lg:mb-32 overflow-x-hidden">
-      <div className="flex flex-wrap md:-mx-3 xl:-mx-6">
-        {location.usps.map(({ heading, icon }, index) => (
-          <div key={index} className="w-full md:w-1/2 xl:w-1/4 md:px-3 xl:px-6 md:mb-6 xl:mb-0">
-            <Usp
-              title={heading} 
-              icon={<FontAwesomeIcon className="text-3xl mt-1 text-primary" icon={`${icon}`} />}
-            />
-          </div>
-        ))}
+    <div className="md:border-b border-grey-light pb-12 lg:pb-24 mb-12 lg:mb-24">
+      <div className="container container--bleed mx-auto overflow-x-hidden">
+        <div className="flex flex-wrap md:-mx-3 xl:-mx-6">
+          {location.usps.map(({ heading, icon }, index) => (
+            <div key={index} className="w-full md:w-1/2 xl:w-1/4 md:px-3 xl:px-6 md:mb-6 xl:mb-0">
+              <Usp
+                title={heading} 
+                icon={<FontAwesomeIcon className="text-3xl mt-1 text-primary" icon={`${icon}`} />}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
 
